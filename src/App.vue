@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import Building from '@/components/Building.vue'
-import ControlPanel from '@/components/ControlPanel.vue'
+import Building from '@/components/building/Building.vue'
+import ControlPanel from '@/components/control-panel/ControlPanel.vue'
 export default {
   name: 'App',
   components: {

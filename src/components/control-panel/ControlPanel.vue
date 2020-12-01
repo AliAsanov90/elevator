@@ -1,5 +1,5 @@
 <template>
-  <div>Conrtol</div>
+  <div class="control-panel">Conrtol</div>
 </template>
 
 <script>
