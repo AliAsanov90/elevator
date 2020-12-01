@@ -1,24 +1,33 @@
 <template>
   <div class="building">
+    <div class="building__roof"></div>
     <Floor
       v-for="floor in floors"
       :key="floor"
+      :floor="floor"
     />
+    <Elevator />
   </div>
 </template>
 
 <script>
-import { mapState } from 'vuex'
+import { mapGetters } from 'vuex'
 import Floor from '@/components/building/Floor.vue'
+import Elevator from '@/components/building/Elevator.vue'
+
 export default {
   name: 'Building',
   components: {
-    Floor
+    Floor,
+    Elevator
   },
   computed: {
-    ...mapState([
+    ...mapGetters([
       'floors'
     ])
+  },
+  mounted () {
+    console.log(this.floors)
   }
 }
 </script>

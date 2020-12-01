@@ -1,9 +1,16 @@
 <template>
-  <div class="floor">Floor</div>
+  <div class="floor">
+    <Doors />
+  </div>
 </template>
 
 <script>
+import Doors from '@/components/building/Doors.vue'
+
 export default {
-  name: 'Floor'
+  name: 'Floor',
+  components: {
+    Doors
+  }
 }
 </script>
