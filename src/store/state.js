@@ -1,5 +1,3 @@
-const state = {
-  floorsCount: 5
-}
+const state = {}
 
 export default state

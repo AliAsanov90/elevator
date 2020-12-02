@@ -11,7 +11,8 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
+import { FLOORS_NUMBER } from '@/constants/building.js'
+import { generateReversedArrayFromNumber } from '@/utils/helpers.js'
 import Floor from '@/components/building/Floor.vue'
 import Elevator from '@/components/building/Elevator.vue'
 
@@ -22,9 +23,9 @@ export default {
     Elevator
   },
   computed: {
-    ...mapGetters([
-      'floors'
-    ])
+    floors () {
+      return generateReversedArrayFromNumber(FLOORS_NUMBER)
+    }
   },
   mounted () {
     console.log(this.floors)

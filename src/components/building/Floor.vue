@@ -1,6 +1,7 @@
 <template>
   <div class="floor">
     <Doors />
+    <div class="floor__number">Floor {{ floor }}</div>
   </div>
 </template>
 
@@ -11,6 +12,12 @@ export default {
   name: 'Floor',
   components: {
     Doors
+  },
+  props: {
+    floor: {
+      type: Number,
+      required: true
+    }
   }
 }
 </script>
