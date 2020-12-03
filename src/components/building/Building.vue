@@ -28,7 +28,7 @@ export default {
     }
   },
   mounted () {
-    console.log(this.floors)
+    // console.log(this.floors)
   }
 }
 </script>
