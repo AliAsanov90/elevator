@@ -1,5 +1,11 @@
 const state = {
-  currentFloor: 0 // initial value should be "null"" not "0"
+  currentFloor: 1,
+  lastFloor: 1,
+  nextFloor: 1,
+
+  sameDirAndNotPassed: [],
+  oppositeDir: [],
+  sameDirAndPassed: []
 }
 
 export default state

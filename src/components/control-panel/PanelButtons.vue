@@ -4,6 +4,7 @@
       v-for="button in $options.FLOORS_NUMBER"
       :key="button"
       class="panel-buttons__button"
+      @click="$emit('panel-call', button)"
     >
       {{ button }}
     </div>

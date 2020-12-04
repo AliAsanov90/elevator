@@ -15,6 +15,14 @@
     font-size: 30px
     border-radius: 50%
     background-color: orange
+    transition: opacity .3s ease, transform 0.1s ease
 
     &:nth-child(n+3)
       margin-bottom: 20px
+
+    &:hover
+      cursor: pointer
+      opacity: 0.8
+
+    &:active
+      transform: scale(1.07)
