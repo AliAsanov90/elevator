@@ -23,8 +23,9 @@ export default {
     ...mapMutations([
       'defineNextFloor'
     ]),
+
     log (btn) {
-      console.log(btn)
+      // console.log(btn)
       this.defineNextFloor(btn)
     }
   }

@@ -1,4 +1,7 @@
-import { FLOOR_HEIGHT, ELEV_TRANSITION_SEC_PER_FLOOR } from '@/constants/building.js'
+import {
+  FLOOR_HEIGHT,
+  ELEV_TRANSITION_SEC_PER_FLOOR
+} from '@/constants/building.js'
 
 const getters = {
   isElevGoingUp ({ lastFloor, nextFloor }) {

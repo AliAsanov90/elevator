@@ -4,7 +4,7 @@
       class="panel-display__direction-icon icon-arrow-up"
       :style="{ transform: `rotate(${ isElevGoingUp ? 0 : 180 }deg)` }"
     />
-    <span class="panel-display__current-floor">{{ currentFloor }}</span>
+    <span class="panel-display__current-floor">{{ elevCurrentFloor }}</span>
   </div>
 </template>
 
@@ -15,8 +15,9 @@ export default {
   name: 'PanelDisplay',
   computed: {
     ...mapState([
-      'currentFloor'
+      'elevCurrentFloor'
     ]),
+
     ...mapGetters([
       'isElevGoingUp'
     ])
